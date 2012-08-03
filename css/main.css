@@ -1,0 +1,10 @@
+body {
+    background: black;
+    color: gold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding-top: 20%;
+}
+#balance {
+    font-size: 68px;
+}
