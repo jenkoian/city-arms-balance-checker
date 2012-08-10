@@ -1,0 +1,10 @@
+{% extends 'layout.twig' %}
+{% block body %}
+    <section id="main">
+        <form id="url-form" action="" method="get">
+            <input type="text" name="url" id="url" value="" placeholder="{{ defaultUrl }}" />
+            <button id="show-button">Show Balance</button>
+        </form>
+        <h1 id="balance"></h1>
+    </section>
+{% endblock %}
