@@ -1,6 +1,6 @@
 {% extends 'layout.twig' %}
 {% block body %}
-    <section id="main">
+    <section id="main" class="index">
         <img src="{{ app.request.basepath }}/img/logo.jpg" alt="City Arms" />
         <form id="url-form" action="" method="get">
             <input type="text" name="url" id="url" value="" placeholder="{{ defaultUrl }}" />
@@ -8,4 +8,6 @@
         </form>
         <h1 id="balance"></h1>
     </section>
+
+    <footer><a href="{{ app.request.basepath }}/wtf">WTF?</a></footer>
 {% endblock %}

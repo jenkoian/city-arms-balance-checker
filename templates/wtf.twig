@@ -1,0 +1,24 @@
+{% extends 'layout.twig' %}
+{% block body %}
+    <section id="main" class="wtf">
+        <p>The city arms is the finest drinking establishment in all of Cardiff. What's super about it (apart from the fine choice of ales)
+            is the fact they offer a loyalty card scheme (think nectar card) which offer you credit to buy (even more!) beer the more you
+            spend there. It is genuinely a brilliant thing going to the pub after work on a Friday and being able to have a 'free' beer
+            using all the credit you stacked up from the odd pint here and there.</p>
+
+        <p>This app basically scrapes your loyalty card statement for your overall balance and presents it in a nice easy to read, mobile friendly format.
+            Your personal URL gets stored in localstorage so you only have to dig it out and submit it once.</p>
+
+        <p>Here's what you need to do...</p>
+
+        <ul>
+            <li>Login to your city arms card here: <a target="_blank" href="https://wwws-uk1.givex.com/Merchant_pages/12607/">>https://wwws-uk1.givex.com/Merchant_pages/12607/</a></li>
+            <li>Click on 'View transaction history'</li>
+            <li>Copy the url from the popup/tab that opens</li>
+            <li>Paste the url into this app and click submit</li>
+            <li>If on your mobile, add the page to home screen for instant balance checking goodness</li>
+        </ul>
+    </section>
+
+    <footer><a href="{{ app.request.basepath }}/">&laquo; back</a></footer>
+{% endblock %}

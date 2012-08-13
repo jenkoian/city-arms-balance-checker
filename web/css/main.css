@@ -10,6 +10,15 @@ body img {
     padding: 30px 0;
 }
 
+a {
+    color: #C29230;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 #balance {
     font-size: 68px;
 }
@@ -56,3 +65,27 @@ form button {
 form button:active{
     top: 1px;
 }
+
+ul {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    border: 1px solid #C29230;
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+    border-top: 1px solid #C29230;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+}
+
+li:first-child {
+    border-top: 0;
+}
+
+
+

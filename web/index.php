@@ -37,4 +37,8 @@ $app->get('/balance', function (Request $request) use ($app) {
 
 })->bind('balance');
 
+$app->get('/wtf', function (Request $request) use ($app) {
+    return $app['twig']->render('wtf.twig');
+})->bind('wtf');
+
 $app->run();

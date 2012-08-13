@@ -25,7 +25,7 @@ $(function() {
     }
 
     function makeAjaxRequest(url) {
-        $('#main').append($('<img src="' + base + '/img/loader.gif' + '" id="loader" />'));
+        $('.index').append($('<img src="' + base + '/img/loader.gif' + '" id="loader" />'));
         $.get(base + '/balance', {url: url, ajax: true}, function(data) {
             localStorage.setItem('url', url);
             $('#loader').remove();
