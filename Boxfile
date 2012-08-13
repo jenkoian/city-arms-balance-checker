@@ -1,0 +1,9 @@
+web1:
+  name: city-arms-balance-checker
+  shared_writable_dirs:
+    - vendors
+    - cache
+  document_root: web
+  after_build:
+    - "if [ ! -f composer.phar ]; then curl -s http://getcomposer.org/installer | php; fi; php composer.phar install"  
+    
