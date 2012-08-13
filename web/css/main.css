@@ -6,10 +6,6 @@ body {
     padding-top: 10%;
 }
 
-body img {
-    padding: 20px 0;
-}
-
 a {
     color: #C29230;
     text-decoration: underline;
@@ -17,6 +13,10 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+#main img {
+    padding: 20px 0;
 }
 
 #balance {
