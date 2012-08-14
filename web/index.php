@@ -7,7 +7,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
 $app = new Application();
-$app['debug'] = true;
 $app->register(new TwigServiceProvider(), array(
     'twig.path'    => array(__DIR__.'/../templates'),
     'twig.options' => array('cache' => __DIR__.'/../cache'),
@@ -30,6 +29,7 @@ $app->get('/balance', function (Request $request) use ($app) {
         $crawler = new Crawler();
         $crawler->addContent(file_get_contents($url));
 
+        // Due to the shoddy markup we need to target by font color (!!) if the markup changes the app will break
         $balance = $crawler->filter('font[color="#ff6633"]')->text();
     }
     echo $balance;
