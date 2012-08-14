@@ -15,8 +15,8 @@ demo
 
 You can view the app at: [http://city-arms-balance-checker.pagodabox.com](http://city-arms-balance-checker.pagodabox.com)
 
-<div style="float: left"><img src="http://city-arms-balance-checker.pagodabox.com/img/ss1.png" /></div>
-<div style="float: right"><img src="http://city-arms-balance-checker.pagodabox.com/img/ss2.png" /></div>
+![Screenshot 1](http://city-arms-balance-checker.pagodabox.com/img/ss1.png "Screenshot 1")
+![Screenshot 2](http://city-arms-balance-checker.pagodabox.com/img/ss2.png "Screenshot 2")
 
 contribution suggestions
 =========================
